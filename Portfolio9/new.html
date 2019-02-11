@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page Design</title>
+    <link rel="icon" href="img/me.png" type="image/png" />
+    <link rel="stylesheet" href="font/font.css" type="text/css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #100F39;
+        }
+        
+        #full-wrapper {
+            box-shadow: 0 0 1300px #040252;
+            width: 1200px;
+            margin: 10px auto;
+        }
+        
+        .full-container {
+            width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        
+        #header_wrap {
+            background: url(img/header_bg.png) no-repeat;
+            width: 1200px;
+            margin: 0 auto;
+            height: auto;
+            overflow: hidden;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto-Thin" !important;
+            font-weight: bolder !important;
+        }
+        
+        p,
+        a {
+            font-family: "Roboto-Thin" !important;
+            font-weight: bold !important;
+        }
+        
+        #header #header_logo {
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 2px solid #f00817;
+        }
+        
+        #main-section h2 {
+            font-family: BebasNeueBold, AdobeInvisFont, MyriadPro-Regular;
+            font-size: 28px;
+            color: rgba(255, 255, 255, 255);
+            padding: 23px 0;
+            display: block;
+            text-align: center;
+            background: url(img/Shape.png) no-repeat center bottom;
+        }
+        
+        #main-section p {
+            font-family: OpenSans-Light, AdobeInvisFont, MyriadPro-Regular;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 255);
+            text-align: justify;
+            line-height: 22px;
+            padding: 62px 0;
+            font-weight: normal !important;
+        }
+        
+        #main-section .left-section {
+            float: left;
+            margin-top: 30px;
+            margin-right: 26px;
+            width: 535px;
+        }
+        
+        #main-section .left-section a {
+            font-size: 30px;
+            text-align: center;
+            border-radius: 5px;
+            color: #ffffff;
+            background: #f00817 url(img/button_bg.png) no-repeat center center;
+            text-decoration: none;
+            margin-top: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            width: 250px;
+            height: 80px;
+            display: block;
+            line-height: 80px;
+        }
+        
+        #main-section .right-section {
+            float: left;
+            margin-top: 30px;
+            padding-bottom: 23px;
+        }
+        
+        .insurance_bg {
+            width: 1200px;
+            height: 700px;
+            clear: both;
+            background: #ffffff;
+        }
+        
+        #insurance h5 {
+            font-size: 20px;
+            text-align: center;
+            padding: 37px 24px 33px 31px;
+            color: #ffffff;
+            font-weight: normal;
+            background: #f00817;
+            clear: both;
+        }
+        
+        #insurance #youtube {
+            width: 1000px;
+            height: 565px;
+            background: url(img/poster.png) no-repeat;
+        }
+        
+        .reading_bg {
+            background: #f0f0f0;
+            overflow: hidden;
+            width: 1200px;
+            text-align: center;
+            border-bottom: 1px solid #cbcbcb;
+        }
+        
+        #reading {
+            position: relative;
+        }
+        
+        #reading h2 {
+            font-family: BebasNeueBold, AdobeInvisFont, MyriadPro-Regular;
+            color: #100f39;
+            font-size: 31px;
+            text-transform: uppercase;
+            padding: 25px 0;
+            border-bottom: 1px solid #f00817;
+            padding-bottom: 0;
+            display: inline-block;
+            font-weight: bolder !important;
+        }
+        
+        #reading h2 span {
+            color: #f00817;
+        }
+        
+        #reading ul {
+            padding: 0;
+            text-align: left;
+            margin-top: 23px;
+            padding-left: 20px;
+            padding-bottom: 50px;
+            display: block;
+        }
+        
+        #reading ul li {
+            list-style: none;
+            padding: 3px;
+        }
+        
+        #reading ul li {
+            background: url(img/star.png) no-repeat;
+            background-position: left center;
+            z-index: 99999;
+            padding-left: 30px;
+        }
+        
+        #reading ul li a {
+            text-decoration: none;
+            color: #1d1d1d;
+            font-size: 18px;
+            line-height: 135%;
+        }
+        
+        #reading img {
+            position: absolute;
+            right: 0;
+            bottom: 44px;
+        }
+        
+        .testimonial_bg {
+            border-bottom: 1px solid #cbcbcb;
+            background: #ffffff;
+            width: 1200px;
+            height: 355px;
+            box-sizing: border-box;
+        }
+        
+        #testimonial #avatar {
+            float: left;
+            box-sizing: border-box;
+            width: 28%;
+        }
+        
+        #testimonial img {
+            margin-top: 63px;
+            margin-left: 50px;
+            width: 179px;
+            height: 179px;
+            border-radius: 50%;
+        }
+        
+        #testimonial h3 {
+            font-family: BebasNeueBold, AdobeInvisFont, MyriadPro-Regular;
+            color: #100f39;
+            font-size: 24px;
+            padding-top: 63px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #f00817;
+            display: inline-block;
+        }
+        
+        #testimonial p {
+            padding: 37px 0;
+            color: #212121;
+            font-size: 19px;
+            display: block;
+            text-align: left;
+        }
+        
+        #testimonial p:last-child {
+            text-align: right;
+            padding-top: 0;
+        }
+        
+        #testimonial #testimonial-quote {
+            height: 255px;
+            box-sizing: border-box;
+            float: left;
+            width: 72%;
+        }
+        
+        #testimonial #testimonial-point {
+            clear: both;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 40px;
+        }
+        
+        #testimonial #testimonial-point span {
+            width: 16px;
+            height: 16px;
+            background: #e6e6e6;
+            display: inline-block;
+            border-radius: 50%;
+        }
+        
+        .whether_bg {
+            height: 443px;
+            background: #ffffff;
+            text-align: center;
+        }
+        
+        #whether h3 {
+            font-family: BebasNeueBold, AdobeInvisFont, MyriadPro-Regular;
+            color: #100f39;
+            font-size: 31px;
+            text-transform: uppercase;
+            padding: 25px 0;
+            border-bottom: 1px solid #f00817;
+            padding-bottom: 0;
+            display: inline-block;
+        }
+        
+        #whether ul {
+            padding: 0;
+            text-align: left;
+            margin-top: 23px;
+            padding-bottom: 50px;
+            display: block;
+        }
+        
+        #whether ul li {
+            list-style: none;
+            padding: 3px;
+        }
+        
+        #whether ul li {
+            background: url(img/star.png) no-repeat;
+            background-position: left center;
+            padding-left: 30px;
+        }
+        
+        #whether ul li a {
+            text-decoration: none;
+            color: #1d1d1d;
+            font-size: 19px;
+        }
+        
+        #whether p {
+            color: #1d1d1d;
+            font-size: 23px;
+            text-align: left;
+        }
+        
+        #whether>a {
+            font-size: 30px;
+            text-align: center;
+            border-radius: 5px;
+            color: #ffffff;
+            background: #f00817 url(img/button_bg.png) no-repeat center center;
+            text-decoration: none;
+            margin-top: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            width: 250px;
+            height: 80px;
+            display: block;
+            line-height: 80px;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+        
+        .call_section_bg {
+            background: url(img/call_bg.jpg);
+            background-size: cover;
+            height: 311px;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        #call_section h4 {
+            font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+            font-size: 28px;
+            padding: 0;
+            padding: 23px 0;
+            padding-bottom: 10px;
+        }
+        
+        #call_section h2 {
+            font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+            font-size: 60px;
+            padding-bottom: 18px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #f00817;
+            display: inline-block;
+        }
+        
+        #call_section h3 {
+            font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+            font-size: 38px;
+            text-transform: uppercase;
+        }
+        
+        .footer_bg {
+            background: #ffffff;
+        }
+        
+        #footer {
+            height: 90px;
+        }
+        
+        #footer p {
+            font-family: OpenSans-Light, AdobeInvisFont, MyriadPro-Regular;
+            font-size: 19px;
+            color: rgba(60, 60, 60, 255);
+            text-align: justify;
+            padding: 36px 0;
+            float: left;
+        }
+        
+        #footer ul {
+            display: flex;
+            float: right;
+            margin-top: 26px;
+        }
+        
+        #footer ul li {
+            list-style: none;
+            padding: 0 10px;
+        }
+        
+        #footer ul li:first-child {
+            border-right: .5px solid #b8b8b8;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a style="text-decoration:none; color:#000000; Padding:10px 40px; background:#E53249; display:block; text-align:center; font-family:Armata-Regular; font-weight:bold; font-size:21px;" href="index.html">Back To Home</a>
+    </div>
+    <div id="full-wrapper">
+        <div id="header_wrap">
+            <div class="full-container">
+                <div class="container">
+                    <header id="header">
+                        <div id="header_logo">
+                            <img src="img/main-logo.png" />
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <div class="full-container ">
+                <div class="container">
+                    <section id="main-section">
+                        <div>
+                            <h2> Read Tips and Scripts from Over 35 Agents in this Comprehensive Guide to Selling <br/>Medicare Supplements and Final Expense Life Insurance to Seniors! </h2>
+                        </div>
+                        <div>
+                            <div class="left-section">
+                                <p> Life insurance sales training often comes at a great cost, requiring agents to spend thousands on conferences or give up contracts in exchange for training. Save your money, keep your contracts, and read this book to learn
+                                    the proven sales tips and scripts that 35+ successful agents use to sell life insurance and Medicare Supplements to seniors. </p>
+                                <a href="#">Read More</a>
+                            </div>
+                            <div class="right-section">
+                                <img src="img/book-1.png" alt="book">
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-container insurance_bg ">
+            <section id="insurance">
+                <h5> This insurance sales training manual covers the entire sales process, from equipping agents with the skills to<br/> contact leads and close sales,to polishing their online brands to attract referrals and internet leads! </h5>
+                <div class="container">
+                    <div id="youtube">
+                        <iframe width="1000px" height: "565px" src="" poster="img/poster.png" frameborder="0"></iframe>
+                    </div>
+            </section>
+            </div>
+            <div class="full-container reading_bg">
+                <div class="container">
+                    <section id="reading">
+                        <h2>By reading this book,<span>you’ll learn:</span> </h2>
+                        <ul>
+                            <li><a href="#">  The differences between selling Final Expense life insurance and Medicare Supplements, and which one is right for you </a></li>
+                            <li><a href="#"> How to explain the most confusing Medicare and life insurance plan options </a></li>
+                            <li><a href="#"> How to prospect for Final Expense life insurance leads or Medicare Supplement leads, and how different types of leads compare </a></li>
+                            <li><a href="#"> How to approach leads, and what to say to gain their trust
+ </a></li>
+                            <li><a href="#"> The four key elements of an appointment setting script to get your foot in the door </a></li>
+                            <li><a href="#"> 
+How to handle unresponsive leads to maximize your investment </a></li>
+                            <li><a href="#"> How to evaluate prospects’ needs, budgets, and health conditions to qualify them for coverage </a></li>
+                            <li><a href="#"> How to overcome the most common objections and concerns that seniors have </a></li>
+                            <li><a href="#"> How to present & sell Final Expense life insurance and Medicare Supplements online, <br/>
+on the phone or in person
+ </a></li>
+                            <li><a href="#"> The keys to providing consistently great customer service to keep clients happy long-term </a></li>
+                            <li><a href="#"> How to maximize your ROI by cross-selling prospects and clients </a></li>
+                            <li><a href="#"> How to expand your client base by passively earning or actively soliciting referrals </a></li>
+                            <li><a href="#"> What it takes to cultivate a polished online brand that will bring business to you </a></li>
+                            <li><a href="#"> What motivates successful agents and how they organize their days to stay successful </a></li>
+                        </ul>
+                        <img src="img/book-2.png" />
+                    </section>
+                </div>
+            </div>
+            <div class="full-container testimonial_bg">
+                <div class="container">
+                    <blockquote id="testimonial">
+                        <div id="avatar">
+                            <img src="img/avatar.png" alt="avatar" />
+                        </div>
+                        <div id="testimonial-quote">
+                            <h3>SEE WHAT THEY ARE SAYING! </h3>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p id="testimonial-name">Jackie - Jensen</p>
+
+                        </div>
+                        <div id="testimonial-point">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="full-container whether_bg">
+                <div class="container">
+                    <article id="whether">
+                        <h3>Whether you’re:</h3>
+                        <ul>
+                            <li><a> A new agent seeking Medicare Supplement or Final Expense sales training
+</a></li>
+                            <li><a> An experienced agent looking to hone your brand and see what other successful agents are doing </a></li>
+                            <li><a>  An agency/IMO/FMO figuring out an inexpensive way to give agents Medicare Supplement or Final Expense training without hiring a mentor or trainer </a></li>
+                        </ul>
+
+                        <p> Read these proven tips and scripts to increase your ROI now! </p>
+
+                        <a> Read More </a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="full-container call_section_bg">
+                <div class="container">
+                    <article id="call_section">
+                        <h4>Call Now</h4>
+                        <h2>(844)7 heroes </h2>
+                        <h4>Email</h4>
+                        <h3> Leads@leadheroes.com </h3>
+                    </article>
+                </div>
+            </div>
+
+            <div class="full-container footer_bg">
+                <div class="container">
+                    <footer id="footer">
+                        <div>
+                            <p>&copy; Copyright 2015 Lead Heroes. All Rights Reserved. </p>
+                        </div>
+                        <ul>
+                            <li><img src="img/google_plus_gp.png"></li>
+                            <li><img src="img/linkedin_gp.png"></li>
+                        </ul>
+                        <div>
+
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <!--
+     <div class="full-container">
+        <div class="container">
+            
+        </div>
+    </div>
+-->
+
+        </div>
+</body>
+
+</html>

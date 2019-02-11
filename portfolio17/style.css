@@ -1,0 +1,137 @@
+/* Global Style Start*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'AvenirNextLTPro-Bold';
+}
+p {
+    line-height: 150%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+.full-container {
+    width:100% ;
+    margin: 0 auto;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+/* Global Style End*/
+
+
+/* Header Style Start*/
+
+#header {
+    background: url("img/hero.jpg") no-repeat;
+    background-size:cover;
+    height: 700px;
+}
+#header #menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#header #menu  img{
+    padding-top: 20px;
+    width:200px;
+}
+#header #menu ul{
+    display: flex;
+    flex-wrap: wrap; 
+    padding-top: 40px;
+}
+#header #menu ul li a{
+    font-family: 'Montserrat-Regular';
+    font-size: 15px;
+    color:#fff;
+    padding:0 15px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+}
+#header #menu ul li:last-child a{
+    font-weight: bolder;
+    border:2px solid #fff;
+    border-left-color:rgba(255,255,255,.5);
+    padding:12px 20px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+#header #hero-content  h1 {
+    font-family: 'Montserrat-Bold';
+    font-weight:bolder;
+    font-size:50px;
+    color:#fff;
+    text-transform:uppercase;
+    margin-top:120px;
+}
+#header #hero-content  p {
+    font-family: 'Montserrat-Regular';
+    font-size:17px;
+    line-height:150%;
+    color:#fff;
+    margin-bottom:120px;
+}
+#header #hero-content  a {
+    display:inline-block;
+    font-family: 'Montserrat-Regular';
+    font-weight:bold;
+    padding:15px 30px;
+    font-size:16px;
+    text-align:center;
+    border:2px solid #3ECF8E;
+    border-radius:5px;
+    background:#3ECF8E;
+    color:#fff;
+    text-transform:uppercase;
+}
+#header #hero-content  a:last-child {
+    background:transparent;
+    margin-left:20px;
+}
+
+/* Header Style End*/

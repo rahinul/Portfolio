@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: 'AvenirNextLTPro-Bold';
+    src: url('../font/AvenirNextLTPro-Bold.eot');
+    src: url('../font/AvenirNextLTPro-Bold.woff2') format('woff2'), url('../font/AvenirNextLTPro-Bold.woff') format('woff'), url('../font/AvenirNextLTPro-Bold.ttf') format('truetype'), url('../font/AvenirNextLTPro-Bold.svg#AvenirNextLTPro-Bold') format('svg'), url('../font/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro-MediumCn';
+    src: url('../font/AvenirNextLTPro-MediumCn.eot');
+    src: url('../font/AvenirNextLTPro-MediumCn.woff2') format('woff2'), url('../font/AvenirNextLTPro-MediumCn.woff') format('woff'), url('../font/AvenirNextLTPro-MediumCn.ttf') format('truetype'), url('../font/AvenirNextLTPro-MediumCn.svg#AvenirNextLTPro-MediumCn') format('svg'), url('../font/AvenirNextLTPro-MediumCn.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'calibri';
+    src: url('../font/calibri.eot');
+    src: url('../font/calibri.woff') format('woff'),
+         url('../font/calibri.ttf') format('truetype'),
+         url('../font/calibri.svg#calibri') format('svg'),
+         url('../font/calibri.eot?#iefix') format('embedded-opentype');
+  }
+  @font-face {
+    font-family: 'Calibri-Bold';
+    src: url('../font/Calibri-Bold.eot');
+    src: url('../font/Calibri-Bold.woff') format('woff'),
+         url('../font/Calibri-Bold.ttf') format('truetype'),
+         url('../font/Calibri-Bold.svg#Calibri-Bold') format('svg'),
+         url('../font/Calibri-Bold.eot?#iefix') format('embedded-opentype');
+  }
+  @font-face {
+    font-family: 'NordikkaW00Bold';
+    src: url('../font/NordikkaW00Bold.otf.eot');
+    src: url('../font/NordikkaW00Bold.otf.woff') format('woff'),
+         url('../font/NordikkaW00Bold.otf.ttf') format('truetype'),
+         url('../font/NordikkaW00Bold.otf.svg#NordikkaW00Bold.otf') format('svg'),
+         url('../font/NordikkaW00Bold.otf.eot?#iefix') format('embedded-opentype');
+  }
+  @font-face {
+    font-family: 'TrajanPro-Regular';
+    src: url('../font/TrajanPro-Regular.eot');
+    src: url('../font/TrajanPro-Regular.woff2') format('woff2'), url('../font/TrajanPro-Regular.woff') format('woff'), url('../font/TrajanPro-Regular.ttf') format('truetype'), url('../font/TrajanPro-Regular.svg#TrajanPro-Regular') format('svg'), url('../font/TrajanPro-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrajanPro-Bold';
+    src: url('../font/TrajanPro-Bold.eot');
+    src: url('../font/TrajanPro-Bold.woff2') format('woff2'), url('../font/TrajanPro-Bold.woff') format('woff'), url('../font/TrajanPro-Bold.ttf') format('truetype'), url('../font/TrajanPro-Bold.svg#TrajanPro-Bold') format('svg'), url('../font/TrajanPro-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

@@ -1,0 +1,23 @@
+@font-face{
+    font-family:"Armata-Regular";
+    src:url("../font/Armata-Regular.ttf") format("truetype"),
+        url("../font/Armata-Regular.woff") format("woff"),
+        url("../font/Armata-Regular.eot") format("eot"),
+        url("../font/Armata-Regular.svg#Armata-Regular") format("svg");
+}
+@font-face{
+    font-family:"BreeSerif-Regular";
+    src:url("../font/BreeSerif-Regula.ttf") format("truetype"),
+        url("../font/BreeSerif-Regula.woff") format("woff"),
+        url("../font/BreeSerif-Regula.eot") format("eot"),
+        url("../font/BreeSerif-Regula.svg#BreeSerif-Regula") format("svg");
+}
+
+@font-face{
+    font-family:"Lato-Thin";
+    src:url("../font/Lato-Thin.ttf") format("truetype"),
+        url("../font/Lato-Thin.woff") format("woff"),
+        url("../font/Lato-Thin.eot") format("eot"),
+        url("../font/Lato-Thinr.svg#Lato-Thin") format("svg");
+}
+

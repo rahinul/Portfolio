@@ -1,0 +1,112 @@
+
+/* Header Style Start*/
+#header #header_bottom_menu ul {
+    display:flex;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/* Header Style End*/
+
+/*trading-menu start*/
+.trading-menu_bg{
+    background: #fafafa;
+    height: 70px;
+   
+}
+
+#trading-menu ul{
+    width:80%;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+}
+#trading-menu ul li{
+    float: left;
+    padding:29px 20px;
+
+}
+#trading-menu ul li a{
+    font-family: 'AvenirNextLTPro-Bold';
+    color: #A7A7A7;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*trading-menu End*/
+
+/* trading platforms start*/
+#trading #trading-image{
+    width:28%;
+    float: left;
+    padding-top: 80px;
+    margin-right: 6%;
+}
+#trading #trading_platforms{
+    width:66%; 
+    float: left;
+
+}
+#trading #trading_platforms h2{
+    font-family: AvenirNextLTPro-Bold, AdobeInvisFont, Tahoma;
+    color: #3e596d;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding:86px 0 56px ;
+    
+}
+#trading #trading_platforms p{
+    font-family:AdobeInvisFont,Tahoma,MyriadPro-Regular;
+    color: #484848;
+    font-size: 19px;
+    letter-spacing: -.5px;
+    
+}
+#trading #service_item {
+    margin-top: 34px;
+}
+#trading #service_item span{
+    margin-right:10px;
+}
+#trading #service_item ul {
+    width:50%;
+    float: left;
+}
+#trading #service_item ul li {
+    font-family: 'MYRIADPROREGULAR';
+    color: #474747;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#download_zen{
+    padding-top:81px;
+}
+#download_zen_pro{
+    text-align: right;
+    margin-right:80px;
+    width:40%;
+    float: left;
+}
+#download_zen_trader{
+    width:40%;
+    float: left;
+    text-align: left;
+}
+#download_zen .button_1{
+    margin-left:40%;
+    margin-bottom:79px;
+    margin-top: 0%;
+   
+} 
+ /*trading platforms End*/ 
+
+.active{
+    background: #173144;
+   
+  
+}
+.active2 {
+    color:#3e596d !important;
+}

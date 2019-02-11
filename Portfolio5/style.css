@@ -1,0 +1,670 @@
+/* Global Style Start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Akkurat-Bold';
+}
+h4,
+h5,
+h6 {
+    font-family: 'Akkurat-Regular';
+}
+
+p {
+    font-family: 'Akkurat-Regular';
+}
+
+a {
+    font-family: 'Akkurat-Bold';
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.fix {
+    clear: both;
+}
+
+.full-container {
+    width: 100%;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+/* Global Style End*/
+
+
+/* Header Style End*/
+.header_top{
+height: 40px;
+background-image: linear-gradient(to right, rgba(33, 43, 134, 0.5) 0%, #0f1b84 100%);
+}
+.header_top ul{
+    display: flex;
+   float: right;
+}
+.header_top ul li{
+    position: relative;
+   float: left;
+   padding:8px 31px;
+}
+.header_top ul li::before{
+    content: '';
+    background: url("img/comment.png") no-repeat;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    left:0px;
+    top:13px;
+    z-index: 2;
+}
+.header_top ul li:last-child::before{
+    background: url("img/telegram_icon.png") no-repeat;
+    width: 22px;
+}
+.header_top ul li:last-child{
+    float: left;
+    padding-right: 0;
+ }
+.header_top ul li a{
+    color: #bdc3ff;
+    font-family: "Akkurat-Bold";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+ }
+.hero_bg{
+    height: 862px;
+    background-image: linear-gradient(52deg, #2f3a9c 0%, #212c90 100%);
+}
+
+#hero #header_logo img{
+    float: left;
+    margin-top: 28px;
+    margin-right:73px;
+}
+#hero #main_menu ul li{
+    float: left;
+    padding:28px 40px;
+}
+#hero #main_menu ul li a{
+    color: #bdc3ff;
+    font-family: "Akkurat-Bold";
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+}
+#hero #wallpaper{
+    margin-top:23px;
+    float: right;
+}
+#hero #wallpaper a{
+    display: block;
+    width: 144px;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: 0 1px 2px rgba(207, 207, 207, 0.2);
+    border-radius: 3px;
+    border: 1px solid #bdc3ff;
+    color: #bdc3ff;
+    font-family: "Akkurat-Bold";
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.18px;
+}
+.hero_content{
+    position: relative;
+    z-index: 1;
+}
+.hero_content::before{
+    content: '';
+    background: url("img/creative_bg_1.png") no-repeat;
+    width: 835px;
+    height: 477px;
+    position: absolute;
+    left: 140px;
+    top:310px;
+    opacity: 0.21;
+    z-index: 2;
+}
+.hero_content  h1{
+    color: #ffffff;
+    font-family: "Akkurat-Bold";
+    font-size: 54px;
+    font-weight: 700;
+    margin-top:145px;
+}
+.hero_content  h5{
+    font-family: "Akkurat-Regular";
+    color: #bdc3ff;
+    font-size: 22px;
+    font-weight: 400;
+    margin:4px 0 67px 0;
+    line-height: 32px;
+}
+.hero_content  h5 strong{
+    background-image: linear-gradient(270deg, #3ae5d9 0%, #3ec9ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #1fc0b5;
+    font-family: "Akkurat-Bold";
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* jQuery Countdown styles 2.0.0. */
+#count_down{
+	margin-top:145px;
+	margin-right: 32px;
+	width: 336px;
+	height: 312px;
+	text-align: center;
+	border-radius: 4px;
+	background-image: linear-gradient(77deg, #212b86 0%, #0f1b84 100%);
+}
+#count_down h3{
+	color: #79f0e8;
+	font-family: "Akkurat-Bold";
+	font-size: 20px;
+	font-weight: 700;
+	padding-top: 36px;
+	padding-bottom:6px;
+}
+#count_down h4{
+	color: #bdc3ff;
+	font-family: "Akkurat-Bold";
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+#defaultCountdown {
+	width: 275px;
+	height: 90px;
+	margin:26px 0 10px 33px;
+}
+#count_down a{
+	display:block;
+	width: 200px;
+	height: 56px;
+	line-height:56px;
+	box-shadow: 0 12px 20px 3px rgba(37, 44, 102, 0.4);
+	border-radius: 3px;
+	border: 1px solid #1c267e;
+	background-image: linear-gradient(to top, #1bb6f2 0%, #68d5ff 100%);
+	text-shadow: 0 1px 4px #35abd8;
+	text-align:center;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.24px;
+	margin:0 auto;
+}
+.countdown-row  .countdown-section{
+	display: block;
+	float: left;
+	text-align: center;
+	width: 47px;
+	height: 56px;
+	color: #ffffff;
+	font-family: "Akkurat-Light";
+	font-size: 42px;
+	font-weight: 300;
+}
+.countdown-period {
+	display: block;
+	color: #7882e4;
+	font-family: "Akkurat-Bold";
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+}
+.countdown-descr {
+	display: block;
+	width: 100%;
+}
+.countdown-show1 .countdown-section {
+	width: 98%;
+}
+.countdown-show2 .countdown-section {
+	width: 48%;
+}
+.countdown-show3 .countdown-section {
+	width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+	width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+
+.countdown-show7 .countdown-section {
+	width: 14%;
+	border-right:00
+}
+/* Header Style End*/
+
+
+
+/*About Teambrella  Style start*/
+.about_bg{
+    background: url("img/bg_purple.png") no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 1192px;
+    margin-top: -150px;
+    text-align: center;
+}
+#about_teambrella .teambrella_content h2{
+    color: #ffffff;
+    font-family: "Akkurat-Bold";
+    font-size: 42px;
+    font-weight: 700;
+    padding:118px 0 18px 0;
+}
+#about_teambrella .teambrella_content  h5{
+    font-family: "Akkurat-Regular";
+    color: #bdc3ff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+#about_teambrella .teambrella_content  h5 strong{
+    background-image: linear-gradient(270deg, #3ae5d9 0%, #3ec9ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #1fc0b5;
+    font-family: "Akkurat-Bold";
+    font-size: 22px;
+    font-weight: 700;
+}
+#about_teambrella .teambrella_content_section figure{
+    box-sizing: border-box;
+    width:22%;
+    float: left;
+    margin-top: 75px;
+    margin-right:4%;
+}
+#about_teambrella .teambrella_content_section figure:last-child{
+     margin-right:0;
+ }
+ #about_teambrella .teambrella_content_section figure figcaption{
+    color: #ffffff;
+    font-family: "Akkurat-Bold";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+#about_teambrella .teambrella_content_section figure p{
+    color: #e8edf2;
+    font-family: "Akkurat-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+/*About Teambrella  Style End*/
+
+/*our_partner  Style start*/
+.our_partner_bg{
+    background: url("img/Mask.png") no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height:682px;
+    margin-top: -278px;
+    text-align: center;
+}
+#our_partner > img{
+    margin-top: -190px;
+}
+/*our_partner Style End*/
+
+
+/*problem_solution  Style start*/
+.problem_solution_bg{
+    position: relative;
+    height: 2164px;
+    padding-top: 123px;
+    z-index: -3;
+    overflow: hidden;
+}
+
+.problem_solution_bg::before{
+    content: '';
+    background-color: #f7f7ff;
+    opacity: 0.4;
+    width: 1845px;
+    height: 1845px;
+    position: absolute;
+    border-radius: 50%;
+    left:50%;
+    top: 55%;
+    transform: translate(-50%,-54%);
+    z-index: -2;
+
+}
+#problem_solution .problem h2 {
+    color: #2c3948;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 20px;
+}
+#problem_solution .problem p {
+    color: #7b8d9a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+#problem_solution .problem_left{
+    box-sizing: border-box;
+    width:40%;
+    margin: 0% 11% 0 5%;
+}
+#problem_solution .problem_right{
+    box-sizing: border-box;
+    width:40%;
+    margin:0% 2% 129px 2%;
+}
+/* Style for "Our Soluti" */
+.solution {
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
+.solution::before {
+    content: '';
+    position: absolute;
+    left:50%;
+    top:-34px;
+    transform: translate(-50%,0);
+    width: 1007px;
+    height: 1007px;
+    background-color: #f7f7ff;
+    opacity: 0.4;
+    border-radius: 50%;
+    z-index: -2;
+}
+.solution h2{
+    color: #2c3948;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px ;
+}
+.solution p{
+    width: 816px;
+    height: 128px;
+    margin: 0 auto;
+    color: #7b8d9a;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 66px;
+}
+
+.solution > img {
+    margin-bottom: 80px;
+}
+    
+.solution_step .solution_step_same{
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    float: left;
+    width: 408px;
+    margin-right: 180px;
+    margin-bottom: -36px;
+    padding-left: 110px;
+}
+.solution_step .solution_step_same::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    width: 92px;
+    height: 84px;
+    opacity: 1;
+    border-radius: 50%;
+    z-index: 9999;
+}
+.solution_step .solution_step_1::before{
+    background: url(img/img_-_little_puzzle.png) no-repeat;
+}
+.solution_step .solution_step_2::before{
+    background: url(img/img_-_little_puzzle_2.png) no-repeat;
+}
+.solution_step .solution_step_3::before{
+    background: url(img/img_-_little_puzzle_3.png) no-repeat;
+}
+.solution_step .solution_step_4::before{
+    background: url(img/img_-_little_puzzle_4.png) no-repeat;
+}
+.solution_step .solution_step_same h3{
+    height: 31px;
+    color: #2c3948;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 19px;
+}
+.solution_step .solution_step_same p{
+    width: 408px;
+    height: 152px;
+    color: #7b8d9a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+/*problem_solution Style End*/
+
+/*  Teambrella different Style start */
+.teambrella_different_bg{
+    background-image: linear-gradient(to top, #fafaff 0%, #f2f2fc 100%);
+    height: 891px;
+    text-align: center;
+}
+#teambrella_different h2{
+    color: #2c3948;
+    font-size: 42px;
+    font-weight: 700;
+    padding:116px 0 16px 0;
+}
+#teambrella_different h4{
+    color: #7b8d9a;
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 68px;
+}
+#teambrella_different #team_table{
+width: 944px;
+height: 364px;
+margin:0 auto;
+border-radius: 4px 4px 0 0;
+background-color: #ffffff;
+}
+#teambrella_different a.btn{
+display: block;
+width: 200px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+box-shadow: 0 6px 14px 3px rgba(37, 44, 102, 0.06);
+border-radius: 3px;
+border: 1px solid #c2cfd8;
+background-color: #ffffff; 
+color: #95a5b1;
+font-family: "Akkurat-Bold";
+font-size: 15px;
+font-weight: 700;
+letter-spacing: 0.18px;
+margin:0 auto;
+margin-top: 47px;
+}
+/*  Teambrella different Style End */
+
+
+/* teambrella_platform Style start */
+#teambrella_platform{
+    background-color:#ffffff;
+    height: 1106px;
+    text-align: center;
+}
+#teambrella_platform h2{
+    color: #2c3948;
+    font-size: 42px;
+    font-weight: 700;
+    padding:130px 0 16px 0;
+}
+#teambrella_platform h4{
+    color: #7b8d9a;
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 136px;
+    line-height: 32px;
+}
+#teambrella_platform .platform{
+    box-sizing:border-box;
+    width: 1067px;
+    height: 613px;
+    box-shadow: 0 1px 3px 2px rgba(31, 39, 105, 0.04), 0 2px 21px rgba(21, 53, 90, 0.05);
+    border-radius: 4px;
+    background-color:#ffffff;
+    margin:0 auto;
+    text-align: left;
+    padding-top: 43px;
+
+
+}
+#teambrella_platform .platform h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28.56px;
+    color:#2c3948;
+    padding-bottom: 14px;
+}
+#teambrella_platform .platform_right h3 {
+    color: #414ecc;
+   
+}
+#teambrella_platform .platform p {
+    color: #7b8d9a;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 46px;
+}
+#teambrella_platform .platform .platform_left{
+    box-sizing: border-box;
+    width:40%;
+    margin: 0% 11% 0 5%;
+    border-right: 1px solid #e8edf2;
+    padding-right: 79px;
+}
+#teambrella_platform .platform .platform_right{
+    box-sizing: border-box;
+    width:40%;
+    margin:0% 2% 129px 2%;
+}
+.platform_right ul{
+    padding-left: 64px;
+} 
+.platform_right ul li{
+    float: left;
+    padding:15px 10px;
+}
+/* teambrella_platform Style End */
+
+/* Token Sale Style End */
+.token_sale_bg{
+    height: 1303px;
+    color: #ffffff;
+    background-image: linear-gradient(54deg, #7882e4 0%, #414ecc 100%);
+}
+.token_sale .left h2{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 56px;
+    padding-top: 122px;
+    padding-bottom: 20px;
+}
+.token_sale .left p{
+    width: 368px;
+    height: 207px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.token_sale >.right{
+    margin-top: 142px;
+}
+.token_sale .right ul li{
+    font-family: "Akkurat-Light";
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.token_sale .right ul li span{
+    display: block;
+    color: #bdc3ff;
+    font-family: "Akkurat-Bold";
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+.token_sale .right  ul li:last-child{
+    width: 266px;
+    height: 85px;
+    margin-bottom: 130px;
+}
+/* Token Sale Style End */
+
+
+/* roadmap  Style End */
+.roadmap_bg{
+    background:url(img/bg_3.png) no-repeat;
+    background-size: cover;
+    height: 1105px;; 
+}
+
+/* roadmap Style End */

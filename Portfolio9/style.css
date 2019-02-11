@@ -1,0 +1,387 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #100F39;
+    }
+    
+    #full-wrapper {
+        box-shadow: 0 0 1300px #040252;
+        width: 1200px;
+        margin: 50px auto;
+    }
+    
+    .full-container {
+        width: 1200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    #header_wrap {
+        background: url(img/header_bg.png) no-repeat;
+        width: 1200px;
+        margin: 0 auto;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto-Thin" !important;
+        font-weight: bolder !important;
+    }
+    
+    p,
+    a {
+        font-family: "Roboto-Thin" !important;
+        font-weight: bold !important;
+    }
+    
+    #header #header_logo {
+        padding: 15px 0;
+        text-align: center;
+        border-bottom: 2px solid #f00817;
+    }
+    
+    #main-section h2 {
+        font-family: BebasNeueBold, AdobeInvisFont, MyriadPro-Regular;
+        font-size: 28px;
+        color: rgba(255, 255, 255, 255);
+        padding: 23px 0;
+        display: block;
+        text-align: center;
+        background: url(img/Shape.png) no-repeat center bottom;
+    }
+    
+    #main-section p {
+        font-family: OpenSans-Light, AdobeInvisFont, MyriadPro-Regular;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 255);
+        text-align: justify;
+        line-height: 22px;
+        padding: 62px 0;
+        font-weight: normal !important;
+    }
+    
+    #main-section .left-section {
+        float: left;
+        margin-top: 30px;
+        margin-right: 26px;
+        width: 535px;
+    }
+    
+    #main-section .left-section a {
+        font-size: 30px;
+        text-align: center;
+        border-radius: 5px;
+        color: #ffffff;
+        background: #f00817 url(img/button_bg.png) no-repeat center center;
+        text-decoration: none;
+        margin-top: 25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 250px;
+        height: 80px;
+        display: block;
+        line-height: 80px;
+    }
+    
+    #main-section .right-section {
+        float: left;
+        margin-top: 30px;
+        padding-bottom: 23px;
+    }
+    
+    .insurance_bg {
+        width: 1200px;
+        height: 700px;
+        clear: both;
+        background: #ffffff;
+    }
+    
+    #insurance h5 {
+        font-size: 20px;
+        text-align: center;
+        padding: 37px 24px 33px 31px;
+        color: #ffffff;
+        font-weight: normal;
+        background: #f00817;
+        clear: both;
+    }
+    
+    #insurance #youtube {
+        width: 1000px;
+        height: 565px;
+        background: url(img/poster.png) no-repeat;
+    }
+    
+    .reading_bg {
+        background: #f0f0f0;
+        overflow: hidden;
+        width: 1200px;
+        text-align: center;
+        border-bottom: 1px solid #cbcbcb;
+    }
+    
+    #reading {
+        position: relative;
+    }
+    
+    #reading h2 {
+        font-family: BebasNeueBold, AdobeInvisFont, MyriadPro-Regular;
+        color: #100f39;
+        font-size: 31px;
+        text-transform: uppercase;
+        padding: 25px 0;
+        border-bottom: 1px solid #f00817;
+        padding-bottom: 0;
+        display: inline-block;
+        font-weight: bolder !important;
+    }
+    
+    #reading h2 span {
+        color: #f00817;
+    }
+    
+    #reading ul {
+        padding: 0;
+        text-align: left;
+        margin-top: 23px;
+        padding-left: 20px;
+        padding-bottom: 50px;
+        display: block;
+    }
+    
+    #reading ul li {
+        list-style: none;
+        padding: 3px;
+    }
+    
+    #reading ul li {
+        background: url(img/star.png) no-repeat;
+        background-position: left center;
+        z-index: 99999;
+        padding-left: 30px;
+    }
+    
+    #reading ul li a {
+        text-decoration: none;
+        color: #1d1d1d;
+        font-size: 18px;
+        line-height: 135%;
+    }
+    
+    #reading img {
+        position: absolute;
+        right: 0;
+        bottom: 44px;
+    }
+    
+    .testimonial_bg {
+        border-bottom: 1px solid #cbcbcb;
+        background: #ffffff;
+        width: 1200px;
+        height: 355px;
+        box-sizing: border-box;
+    }
+    
+    #testimonial #avatar {
+        float: left;
+        box-sizing: border-box;
+        width: 28%;
+    }
+    
+    #testimonial img {
+        margin-top: 63px;
+        margin-left: 50px;
+        width: 179px;
+        height: 179px;
+        border-radius: 50%;
+    }
+    
+    #testimonial h3 {
+        font-family: BebasNeueBold, AdobeInvisFont, MyriadPro-Regular;
+        color: #100f39;
+        font-size: 24px;
+        padding-top: 63px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #f00817;
+        display: inline-block;
+    }
+    
+    #testimonial p {
+        padding: 37px 0;
+        color: #212121;
+        font-size: 19px;
+        display: block;
+        text-align: left;
+    }
+    
+    #testimonial p:last-child {
+        text-align: right;
+        padding-top: 0;
+    }
+    
+    #testimonial #testimonial-quote {
+        height: 255px;
+        box-sizing: border-box;
+        float: left;
+        width: 72%;
+    }
+    
+    #testimonial #testimonial-point {
+        clear: both;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+    
+    #testimonial #testimonial-point span {
+        width: 16px;
+        height: 16px;
+        background: #e6e6e6;
+        display: inline-block;
+        border-radius: 50%;
+    }
+    
+    .whether_bg {
+        height: 443px;
+        background: #ffffff;
+        text-align: center;
+    }
+    
+    #whether h3 {
+        font-family: BebasNeueBold, AdobeInvisFont, MyriadPro-Regular;
+        color: #100f39;
+        font-size: 31px;
+        text-transform: uppercase;
+        padding: 25px 0;
+        border-bottom: 1px solid #f00817;
+        padding-bottom: 0;
+        display: inline-block;
+    }
+    
+    #whether ul {
+        padding: 0;
+        text-align: left;
+        margin-top: 23px;
+        padding-bottom: 50px;
+        display: block;
+    }
+    
+    #whether ul li {
+        list-style: none;
+        padding: 3px;
+    }
+    
+    #whether ul li {
+        background: url(img/star.png) no-repeat;
+        background-position: left center;
+        padding-left: 30px;
+    }
+    
+    #whether ul li a {
+        text-decoration: none;
+        color: #1d1d1d;
+        font-size: 19px;
+    }
+    
+    #whether p {
+        color: #1d1d1d;
+        font-size: 23px;
+        text-align: left;
+    }
+    
+    #whether>a {
+        font-size: 30px;
+        text-align: center;
+        border-radius: 5px;
+        color: #ffffff;
+        background: #f00817 url(img/button_bg.png) no-repeat center center;
+        text-decoration: none;
+        margin-top: 25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 250px;
+        height: 80px;
+        display: block;
+        line-height: 80px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    
+    .call_section_bg {
+        background: url(img/call_bg.jpg);
+        background-size: cover;
+        height: 311px;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    #call_section h4 {
+        font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+        font-size: 28px;
+        padding: 0;
+        padding: 23px 0;
+        padding-bottom: 10px;
+    }
+    
+    #call_section h2 {
+        font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+        font-size: 60px;
+        padding-bottom: 18px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #f00817;
+        display: inline-block;
+    }
+    
+    #call_section h3 {
+        font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+        font-size: 38px;
+        text-transform: uppercase;
+    }
+    
+    .footer_bg {
+        background: #ffffff;
+    }
+    
+    #footer {
+        height: 90px;
+    }
+    
+    #footer p {
+        font-family: OpenSans-Light, AdobeInvisFont, MyriadPro-Regular;
+        font-size: 19px;
+        color: rgba(60, 60, 60, 255);
+        text-align: justify;
+        padding: 36px 0;
+        float: left;
+    }
+    
+    #footer ul {
+        display: flex;
+        float: right;
+        margin-top: 26px;
+    }
+    
+    #footer ul li {
+        list-style: none;
+        padding: 0 10px;
+    }
+    
+    #footer ul li:first-child {
+        border-right: .5px solid #b8b8b8;
+    }

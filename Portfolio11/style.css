@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full_container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'TrajanPro-Bold';
+}
+
+a {
+    text-decoration: none;
+}
+p{
+    font-family: 'calibri_0';
+}
+li {
+    list-style: none;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+.fix{
+    clear: both;
+}
+    /*global end */
+
+/*header start */
+.header_hero {
+    background: url("img/header_hero.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: hidden;
+    height: 700px;
+    text-align: center;
+}
+
+#header #header_contact {
+    display: block;
+    box-sizing: border-box;
+    float: right;
+
+}
+#header #header_contact ul {
+    background: #d68119;
+    width:75%;
+    height: 40px;
+    position: relative;
+    float: right;
+}
+#header #header_contact li {
+    float: left;
+    padding:10px 17px;
+}
+#header #header_contact ul li span img{
+   margin-top: -3px; 
+   float: left; 
+   margin-right: 10px;
+}
+#header #header_contact ul:before {
+    content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    border:40px solid transparent;
+    border-right:40px solid #d68119;
+    left:-80px;
+    top:-40px;
+}
+#header #header_contact a {
+    font-family: 'AvenirNextLTPro-Bold';
+    font-size: 16px;
+    color: #ffffff;
+}
+#menu_wrap{
+    clear: both;
+}
+#header #logo  {
+    float: left;
+    width:15%;
+    margin-top: -20px;
+    margin-left:20px;
+}
+#header #main_menu{
+    width:80%;
+    float: right;
+}
+#header #main_menu ul {
+    float: right;
+}
+#header #main_menu ul li {
+    float: left;
+    padding:30px 10px;
+}
+#header #main_menu ul li a {
+    font-family: 'AvenirNextLTPro-MediumCn';
+    text-transform: uppercase;
+    color: #d6d6d6;
+    font-size: 15px;
+}
+
+#header #main_menu ul li:hover a{
+    color:#d68119;
+}
+#header #main_menu ul li:nth-child(1){
+    width:20px;
+    margin-top: -34px;
+    margin-right:30px;
+}
+#header #main_menu ul li:nth-child(1) span{
+    display: block;
+    padding-left: 10px;
+}
+#header #header_content{
+    clear: both; 
+}
+#header #header_content h1{
+    font-size: 60px;
+    color:#eeb780; 
+    padding-top: 233px;
+}
+#header #header_content h3{
+    font-size: 20px;
+    color:#ffffff;
+}
+#header #header_content a{
+    display: inline-block;
+    background:url("img/Accredited-Investor.png") no-repeat;
+    width:232px;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+    font-family: 'Nordikka W00 Bold';
+    font-size: 21px;
+    color:#fff;
+    margin-top: 32px;
+}
+#header #header_content #Cannabusiness {
+    background:url("img/Cannabusiness.png") no-repeat;
+    margin-left: 10px;
+}
+/*header end*/
+
+
+/*whoweare start*/
+.who_we_are_bg{
+    position: relative;
+    background: #ffffff;
+
+}
+#who_we_are-img{
+    position: absolute;
+    right: 0;
+    top:-252px;
+}
+#who_we_are{
+    margin-top: 100px;
+    height: 690px;
+}
+#who_we_are #who_we_are-left{
+    width:20%;
+    float: left;
+
+}
+#who_we_are #who_we_are-content{
+    width:60%;
+    margin-left: 20%;
+    float: left;
+}
+#who_we_are #who_we_are-content h2{
+    display: inline-block;
+    padding-bottom:57px;
+    font-size: 26px;
+    color:#0b9444;
+}
+#who_we_are #who_we_are-content h2 span{ 
+    color:#d68119;
+}
+
+#who_we_are #who_we_are-content p{
+    font-family: 'calibri_0';
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#who_we_are #who_we_are-content a{
+    display: inline-block;
+    background:#d68119;
+    width:229px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-family: 'Nordikka W00 Bold';
+    font-size: 21px;
+    color:#fff;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+/*whoweare end*/
+
+
+/*leadership start*/
+.leadership_bg{
+    background: #f0f0f0;
+    height: 1145px;
+    clear: both;
+}
+#leadership  a {
+    display: inline-block;
+    text-align: center;
+    width:1140px;
+    height: 210px;
+
+}
+#leadership  a span img {
+    margin: 0 auto;
+    padding-top:100px;
+    margin-top: -10px;
+    margin-right: 20px;
+    text-align: center;
+}
+#leadership a  h2{
+    display: inline-block;
+    font-family: 'TrajanPro-Bold';
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size: 29px;
+    color:#0b9444;
+ 
+} 
+
+#leadership .leadership_man {
+    width:48%;
+    float: left;
+}
+.Alex_Metson{
+    margin-right: 4%;
+}
+#leadership .leadership_man figure{
+    height: 180px;
+    margin-bottom: 37px;
+}
+
+#leadership .leadership_man figure  img{
+    float: left;
+    margin-right: 26px;
+}
+#leadership .leadership_man figure  h3{
+    font-family: 'TrajanPro-Bold';
+    font-size: 20px;
+    color:#0b9444;
+    padding-top:50px;
+    padding-bottom:5px;
+}
+#leadership .leadership_man figure  h4{
+    font-family: 'TrajanPro-Bold';
+    font-size: 20px;
+    color:#d68119;
+    padding-bottom:25px;
+}
+#leadership .leadership_man figure ul{
+    display: flex;
+}
+#leadership .leadership_man  .same_content p{
+    clear: both;
+    color: #333333;
+    font-size: 18px;
+}
+/*leadership end*/
+
+
+/*what we do start*/
+.what_we_do_bg{
+    background: url("img/what_we-do_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    clear: both;
+    overflow: hidden;
+    height: 700px;
+    text-align: center;
+}
+/*what we do end*/
+
+
+/*sample projects start*/
+.sample_projects_bg{
+    background: #f0f0f0;
+    height: 1145px;
+    clear: both;
+}
+#sample_projects  a {
+    display: inline-block;
+    text-align: center;
+    width:1140px;
+    height: 210px;
+
+}
+#sample_projects  a span img {
+    margin: 0 auto;
+    padding-top:100px;
+    margin-top: -10px;
+    margin-right: 20px;
+    text-align: center;
+}
+#sample_projects a  h2{
+    display: inline-block;
+    font-family: 'TrajanPro-Bold';
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size: 29px;
+    color:#0b9444;
+} 
+
+#sample_projects .sample_projects_same {
+    width:48%;
+    float: left;
+}
+.sample_projects_left{
+    background: #ffffff;
+    height: 740px;
+    margin-right:30px;
+}
+#sample_projects .sample_projects_same  h5{
+    padding:0;
+    padding:32px 0 33px 27px;
+    font-size: 22px;
+    color:#333333;
+}
+#sample_projects .sample_projects_same  p{
+    padding-left:22px;
+    font-size: 18px;
+    color:#333333;
+}
+.sample_projects_right_top{
+    background: #ffffff;
+    width: 570px;
+    height: 355px;
+    margin-bottom: 30px;
+}
+.sample_projects_right_bottom img{
+    float: left;
+    margin-right:22px;
+}
+.sample_projects_right_bottom{
+    background: #ffffff;
+    width:570px;
+    height: 355px;
+}
+.sample_projects_right_bottom img{
+    float: left;
+    margin-right:22px;
+}
+/*sample projects end*/
+
+
+/*accredited investors start*/
+.accredited_bg{
+    background: #f0f0f0;
+    height: 460px;
+    clear: both;
+    text-align: center;
+}
+
+#accredited  h3{
+    display: inline-block;
+    font-family: 'TrajanPro-Bold';
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size: 29px;
+    color:#0b9444;
+ 
+} 
+#accredited .accredited_same {
+    width:48%;
+    float: left;
+}
+.accredited_left{
+    margin-right:4%;
+}
+
+#accredited .accredited_same  p{
+    font-family: 'calibri';
+    padding-left:27px;
+    font-size: 18px;
+    color:#333333;
+}
+#accredited .accredited_same .button_a{
+    display: inline-block;
+    background:#d68119;
+    font-family: 'NordikkaW00Bold';
+    width:229px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 21px;
+    color:#fff;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+/*accredited investors end*/

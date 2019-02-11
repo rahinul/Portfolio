@@ -1,0 +1,553 @@
+/* Global Style Start*/
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+color:#ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+figure,
+figcaption,
+li{
+    font-family: "MYRIADPROREGULAR";
+    font-weight: normal;
+}
+li {
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.fix {
+    clear: both;
+}
+
+.full-container {
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.button{
+    display: inline-block;
+    background: url(img/button_bg.png) no-repeat;
+    width:368px;
+    height: 64px;
+    font-family: "MYRIADPROREGULAR";
+    text-align: center;
+    text-decoration: none;
+    line-height: 64px;
+    font-size: 17px;
+    color:#ffffff;
+
+}
+/* Global Style End*/
+
+
+
+
+/*  header Style start  */
+.header_bg{
+    height: 160px;
+    overflow: hidden;
+    z-index: 2;
+}
+#header #logo{
+    width:25%;
+    float: left;
+    margin-top:30px;
+}
+#header #contact{
+    width:50%;
+    float: right;
+    box-sizing: border-box;
+    margin-top:30px; 
+}
+#header ul{
+    width:100%;
+}
+#header #contact ul li{
+    width:65%;
+    float: left;
+    color:#6a6a6a;
+    font-family: "MYRIADPROREGULAR";
+    font-size: 17px;
+}
+
+
+#header #contact ul li span{ 
+    width:55px; 
+    height:55px; 
+    margin:-15px 8px 20px 0;
+    float: left;
+    display:inline-block;
+}
+#header #contact ul li:nth-child(2),
+#header #contact ul li:nth-child(4){ 
+    width:35%;
+}
+#header #contact ul li:nth-child(3) span,
+#header #contact ul li:nth-child(4) span{ 
+    margin-top:-5px;
+}
+
+/* header Style End*/
+
+
+/*  hero_section Style start  */
+.hero_bg{
+    background:url(img/hero_image.png) no-repeat;
+    background-position:50% 41%;
+    width:100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#hero_section h1{
+    padding: 82px 0 51px 14px;
+    font-size:48px;
+    color:#474747;
+    letter-spacing: 3px;
+}
+#hero_section h3{
+    padding: 0 0 36px 14px;
+    font-size:21px;
+    color:#474747;
+}
+#hero_section h2{
+    padding: 0 0 95px 14px;
+    font-size:36px;
+    color:#26a0d3;
+}
+#hero_section h5{
+    padding:86px 0 25px 14px;
+    font-size:17px;
+    color:#060606;
+    text-transform: uppercase;
+}
+/*  hero_section Style end  */
+
+
+/*  Всестороннее Style start  */
+#Всестороннее{
+    margin-top: -8px;
+    display:flex;
+    flex-wrap: wrap;
+}
+#Всестороннее figure{
+    background: #43b1d2;
+    width:25%;
+    height: 360px;
+    text-align: center;
+}
+#Всестороннее figure:nth-child(1){
+    background: #43b1d2;
+}
+#Всестороннее figure:nth-child(2){
+    background: #3fb6c6;
+}
+#Всестороннее figure:nth-child(3){
+    background: #3cbbbb;
+}
+#Всестороннее figure:nth-child(4){
+    background: #37c3a8;
+}
+#Всестороннее figure .figimg{
+    width:75px;
+    height: 75px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin:0 auto;
+    margin-top: 77px;
+    line-height: 75px;
+}
+#Всестороннее figure figcaption{
+    font-family: "MYRIADPROREGULAR";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 24px;
+    padding:5px 0;
+}
+@media (max-width:768px){
+    #Всестороннее figure{
+        width:100%;
+        float: none;
+    }  
+    #Всестороннее figure .figimg{
+        margin-top:50px;
+    }
+}
+#Всестороннее figure h6{
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: -.5px;
+}
+/*  Всестороннее Style end  */
+
+
+/*  добиваемся Style start  */
+
+#добиваемся #top{
+    text-align: center;
+    color:#6f6f6e;
+}
+#добиваемся #top h2{
+    padding:50px 0 42px 0;
+    font-size: 44px;
+}
+#добиваемся #top h4{
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: -.2px; 
+    padding-bottom: 46px; 
+}
+#добиваемся #bottom{
+    color:#6f6f6e;
+    display: flex;
+    flex-wrap: wrap;   
+}
+#добиваемся  #bottom .bottom_same{
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-flow: column;
+    
+}
+
+@media (max-width:768px){
+    #добиваемся #bottom{
+        color:#6f6f6e;
+        display: block;
+        flex-wrap: nowrap;   
+        
+    } 
+    #добиваемся  #bottom .bottom_same{
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-flow: row;
+        margin-bottom: 100px; 
+    }
+}
+#добиваемся  #bottom .bottom_same_middle{
+    margin-top: -31px;
+    position: relative; 
+}
+.bottom_same_middle img:nth-child(1){
+    animation: doctor2 10s linear infinite;
+
+}
+.bottom_same_middle img:nth-child(2){
+    position: absolute;
+    left:40px;
+    top:0;
+    max-width: 100%;
+    height: 100%;
+    animation: doctor 10s linear infinite ;
+}
+@keyframes doctor {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes doctor2 {
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#добиваемся  #bottom .bottom_same  h2{
+    color:#6f6f6e;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:35px;
+
+}
+#добиваемся  #bottom .bottom_same h2 span{
+    background:#1a9bdc; 
+    border-radius:50%; 
+    line-height:75px; 
+    text-align:center; 
+    margin-right:7px; 
+    margin-top:-9px; 
+    width:75px; 
+    height:75px; 
+    float:left; 
+    display:inline-block;
+}
+#добиваемся  #bottom .bottom_same p{
+    margin-top:26px; 
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: -.2px; 
+}
+/*  добиваемся Style end  */
+
+
+/*  ЗАПИШИТЕСЬ Style start  */
+
+.composed_bg{
+    background: url(img/Composed-BG.jpeg) no-repeat;
+    height: 595px;
+    background-size: 100% 100%;
+}
+#composed  .composed_same{
+    width:33.33%;
+    float: left; 
+    height: 595px;
+    text-align: center;
+}
+#composed  .composed_same img{
+    margin-top: 119px;
+    margin-bottom:24px; 
+}
+#composed  .composed_same:last-child img{
+    margin-bottom:28px; 
+}
+#composed  .composed_same figcaption{
+    font-size: 47px; 
+}
+
+#composed  .composed_same:nth-child(2) span{
+    display:block;
+    width:85px;
+    height: 6px;
+    background: #ffffff;
+    margin:0 auto;
+    margin-bottom: 8px;
+}#composed  .composed_same:nth-child(2) span:first-child{
+    margin-top: 350px;
+}
+#composed  .composed_same h3{
+    font-size: 22px; 
+    margin-top: 64px;
+}
+#composed  .composed_same:last-child h3{
+    margin-top: 16px;
+}
+#composed  .composed_same .button_white{
+    background: url(img/button_bg_2.png) no-repeat;
+    color:#1a9bdc;
+    margin-top:16px;
+}
+#composed  .composed_same:last-child .button_white{
+    margin-top:21px;
+}
+/*  ЗАПИШИТЕСЬ Style end  */
+
+
+
+/*  СПОСОБЫ  Style start  */
+#СПОСОБЫ{
+    box-sizing: border-box;
+}
+#СПОСОБЫ h2{
+    padding:114px 0 55px 0;
+    font-size: 31px;
+    text-align: center;
+    color:#494949;
+}
+#СПОСОБЫ figure{
+    box-sizing: border-box;
+    width:22%;
+    height: 600px;
+    padding:10px;
+    margin-bottom: 95px;
+    float: left;
+    border:2px solid #3fb6c6;
+    text-align: left;
+    margin-right:4%;
+}
+#СПОСОБЫ figure:last-child{
+    margin-right:0%;
+}
+#СПОСОБЫ figure img{
+    max-width: 100%;
+}
+#СПОСОБЫ figure figcaption{
+    margin: 60px 0 15px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color:#6a6a6a;
+}
+#СПОСОБЫ figure h3 {
+    padding-left: 20px;
+    font-size: 15px;
+    color:#6a6a6a;
+}
+/*  ЗАПИШИТЕСЬ Style end  */
+
+
+
+/*  РЕЦЕПТ  Style start  */
+.РЕЦЕПТ_bg{
+    background: url(img/РЕЦЕПТ_bg.jpeg) no-repeat;
+    height:829px;
+    background-size: 100% 100%;
+}
+
+#РЕЦЕПТ h2{
+    padding:77px 0 64px 0;
+    font-size: 31px;
+    text-align: center;
+    color:#ffffff;
+}
+#РЕЦЕПТ  .РЕЦЕПТ_same{
+    box-sizing: border-box;
+    width:48%;
+    height:250px;
+    padding:10px;
+    margin-bottom:50px;
+    float: left;
+    border:2px solid #ffffff;
+    text-align: center;
+    margin-right: 17px;
+
+}
+#РЕЦЕПТ  .РЕЦЕПТ_same img{
+    float: left;
+    max-width: 100%;
+    margin-right:14px;
+}
+#РЕЦЕПТ  .РЕЦЕПТ_same h3{
+    float: left;
+    font-size: 17px;
+    width:218px;
+    line-height: 23px;
+}
+#РЕЦЕПТ  .РЕЦЕПТ_same h3 span{
+    display: block;
+    font-weight: 600;
+}
+/*  РЕЦЕПТ Style end  */
+
+
+
+/*  вашу  Style start  */
+#вашу #вашу_top h3{
+    padding:90px 0 0 0;
+    font-size: 31px;
+    text-align: center;
+    color:#494949;
+}
+#вашу #вашу_top h4{
+    font-size:20px;
+    text-align: center;
+    color:#494949;
+    padding-bottom: 35px;
+}
+#Слой_man{
+    width:50%;
+    margin:0 auto;
+}
+#Слой_man .Слой_man_same {
+    width:50%;
+    float: left;
+}
+#Слой_man .Слой_man_same h3{
+    font-size: 21px;
+    color:#6f6f6e;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+#Слой_man .Слой_man_same h4{
+    font-size: 15px;
+    color:#6f6f6e;
+    font-weight: bold;
+}
+#Слой_man .Слой_man_same p{
+    color: #6f6f6e;
+    font-size: 12px;
+    margin-bottom: 60px;
+}
+#Слой_man .Слой_man_same .Слой_man_same_p2{
+    margin-bottom: 35px;
+}
+/*  РЕЦЕПТ Style end  */
+
+
+/*  РЕЦЕПТ  Style start  */
+.Запишитесь_bg{
+    background: #e2e2e2;
+    height: 176px;
+}
+#Запишитесь  h2{
+    width:60%;
+    font-size: 29px;
+    color:#494949;
+    font-weight: bold;
+    float: left;
+    line-height: 176px;
+    text-align: right;
+    margin-right: 55px;
+}
+#Запишитесь  a{
+    margin-top: 55px;
+}
+/*  РЕЦЕПТ Style end  */
+
+.map img{
+    min-width: 100%;
+    width:100%;
+}
+
+/*  footer  Style start  */
+.footer_bg{
+    background: #1a1a1a;
+    height: 130px;
+}
+#footer ul li {
+   float: left;
+   margin: 45px 160px; 
+}
+#footer ul li:first-child {
+    margin-left: 0px; 
+ }
+#footer ul li:last-child {
+    margin-right: 0px; 
+ }
+#footer ul li span{ 
+    width:65px; 
+    float:left; 
+    display:block;
+}
+/*  footer  Style start  */

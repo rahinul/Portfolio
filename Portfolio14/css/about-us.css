@@ -1,0 +1,62 @@
+/* Global Style Start*/
+#cfds-menu ul li:first-child a {
+    text-transform: uppercase;
+}
+
+#header #header_bottom_menu ul {
+    display:flex;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/* cfds  start*/
+#aboutus{
+    height: 840px;;
+    padding-bottom: 80px;
+}
+#aboutus #aboutus-left{
+    width:28%;
+    float: left;
+    padding-top: 80px;
+    margin-right: 6%;
+}
+#aboutus #aboutus-left ul {
+    padding-top:45px;
+ }
+#aboutus #aboutus-left ul li {
+   padding:5px 0;
+}
+#aboutus #aboutus-left ul li a{
+    display:block;
+    background: #3e596d;
+    font-family:AvenirNextLTPro-Bold,AdobeInvisFont,Tahoma,MyriadPro-Regular;
+    font-size: 16px;
+    width:340px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color:#ffffff;
+    border-radius:7px;
+}
+#aboutus #aboutus_content{
+    width:66%; 
+    float: left;
+
+}
+#aboutus #aboutus_content h2{
+    font-family: AvenirNextLTPro-Bold, AdobeInvisFont, Tahoma;
+    color: #3e596d;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding:86px 0 56px ;
+    
+}
+#aboutus #aboutus_content p{
+    font-family:AdobeInvisFont,Tahoma,MyriadPro-Regular;
+    color: #484848;
+    font-size: 19px;
+    letter-spacing: -.5px;
+    
+}
+ /*cfds  End*/ 

@@ -1,0 +1,577 @@
+/* Global Style Start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'AvenirNextLTPro-Bold';
+}
+p {
+    font-family: " ";
+    line-height: 150%;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'NordikkaW00Bold';
+}
+
+li {
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+.full-container {
+    max-width:100% ;
+    margin: 0 auto;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Global Style End*/
+
+
+/* Header Style Start*/
+
+.header_bg {
+    background: url("img/header-homepage.jpeg") no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: hidden;
+    text-align: center;
+}
+
+#header  {
+    margin-top:30px;
+}
+#header .logo {
+    background: url("img/rectangle-6.png") no-repeat;
+    float: left;
+}
+
+#header .logo img {
+    padding: 10px 26px;
+}
+
+#header .menu {
+    width: 935px;
+    height: 110px;
+    float: left;
+    margin-bottom: 202px;
+}
+
+#header .top_menu,
+#header .main_menu {
+    height: 55px;
+    color: #ffffff;
+    float: left;
+    letter-spacing: .81px;
+}
+
+#header .top_menu ul li {
+    float: left;
+}
+
+#header .top_menu #live {
+    position: relative;
+    background-color: rgba(101, 130, 146, .75);
+    display: block;
+    font-family: 'NordikkaW00Bold';
+    color: #ffffff;
+    font-size: 15px;
+    width: 145px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    float: left;
+    text-transform: uppercase;
+}
+
+#header .top_menu #live:before {
+    content: '';
+    position: absolute;
+    top: 38%;
+    right: -16px;
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-left: 8px solid rgba(101, 130, 146, .75);
+    ;
+}
+
+#header .top_menu #live_rank {
+    background-color: rgba(23, 49, 68, .75);
+    width: 561px;
+    display: flex;
+    float: left;
+}
+
+#header .top_menu #live_rank ul li {
+    padding-left: 25px;
+}
+
+#header .top_menu #social {
+    background: url("img/rectangle-9.png") no-repeat;
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+}
+
+#header .top_menu #social ul li {
+    padding: 0 3px;
+}
+
+#header .top_menu #live_rank ul li:first-child,
+#header .top_menu #social ul li:first-child {
+    padding-left: 28px;
+}
+
+#header .top_menu #social ul li:nth-child(4) {
+    padding-right: 15px;
+}
+
+#header .top_menu #social ul li:last-child img {
+    padding-right: 28px;
+    padding-left: 15px;
+    border-left: 1px solid #ffffff;
+}
+
+#header .main_menu ul li {
+    float: left;
+    padding: 10px 11px;
+    margin-top: 10px;
+}
+
+#header .main_menu {
+    position: relative;
+    background: url("img/rectangle-10.png") no-repeat;
+    width: 943px;
+    margin-left: -8px;
+}
+
+#header .main_menu ul li:first-child {
+    margin-left: 31px;
+}
+#header .main_menu ul li a{
+    font-family: 'AvenirNextLTPro-DemiCn';
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+   
+}
+#header .top_menu ul li a{
+    font-family: 'AvenirNextLTPro-Bold';
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#header .top_menu ul li a {
+    font-size: 13px;
+    letter-spacing: 0px;
+}
+
+#header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    color: #ffffff;
+    text-shadow: 0px 0px 30px #000000;
+}
+
+#header #button {
+    display: inline-block;
+    font-family: 'ZonaPro-Bold';
+    color: #ffffff;
+    font-size: 21px;
+    width: 240px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+#header #header_bottom_menu ul {
+    display: flex;
+    background: url("img/sub_menu_bg.png") no-repeat;
+    margin-top: 202px;
+    padding-bottom: 50px;
+}
+
+#header #header_bottom_menu ul li a {
+    font-family: 'AvenirNextLTPro-Bold';
+    color: #ffffff;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 76px;
+    text-transform: uppercase;
+}
+
+
+/* Header Style End*/
+
+.same_type {
+    width: 33.33%;
+    height: 700px;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.same_type h2 {
+    font-size: 19px;
+    color: rgba(23, 49, 68, 255);
+    padding: 86px 0 29px 0;
+    text-transform: uppercase;
+}
+.same_type h2 span {
+    text-transform: lowercase;
+}
+.same_type p {
+    font-family: 'MYRIADPROREGULAR';
+    font-size: 19px;
+    color: rgba(51, 51, 51, 255);
+    line-height: 24px;
+    padding-top: 33px;
+    padding-left: 32px;
+    padding-right: 33px;
+    text-align: left;
+}
+
+.download_zen {
+    background: #dcdcdc;
+}
+
+.download_zen h2 {
+    color: #173144;
+}
+.download_zen a img {
+margin-top:40px;
+}
+.open_an_account h2{
+    margin-bottom:14px;
+}
+.account{
+    margin-bottom:71px;
+}
+.button_1{
+    display:block;
+    background: url("img/button_bg.png") no-repeat;
+    background-position: center center;
+    background-size: 187px 47px;
+    font-family: 'NordikkaW00Bold';
+    line-height: 47px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color:#ffffff;
+    margin-top: 28px;
+}  
+/*multi_account end*/
+
+/*feature_section start*/
+.feature_section_bg{
+    background: url("img/feature_section_bg.jpeg") no-repeat;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center center;
+    
+}
+#feature_section{
+    width:100%;
+    height:655px;
+    margin-top:100px;
+    box-sizing: border-box; 
+}
+ .feature_same_img{
+    width:20%;
+    height: 200px;
+    float: left;
+}
+.feature_content{
+    width:80%;
+    float: left;
+}
+
+.feature h3{
+    font-family: 'Calibri-Bold';
+    text-transform: uppercase;
+    font-size: 19px;
+    color: #ffffff;
+    padding:5px 12px;  
+}
+.feature p{
+    font-family: 'calibri';
+    font-size: 19px;
+    color: #ffffff;
+    margin:5px 0px 0px 12px;
+    font-weight: normal; 
+}
+.feature{
+    width:30%;
+    margin-right: 5%;
+    height: 260px;
+    float: left;
+    box-sizing: border-box;  
+}
+.feature_top {
+    height: 200px;
+    margin-bottom: 100px;
+}
+.feature_top  .feature{
+    border-bottom: 1px solid #4C545F;
+}
+.feature_3{
+    margin-right: 0%;
+}
+.feature_2{
+    height: 230px;
+    border-left: 1px solid #4C545F;
+    border-right: 1px solid #4C545F;
+    margin-left:-30px;
+    margin-right:-30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.feature_bottom{
+    clear: both;
+}
+.download_zen_bg{
+    background: url("img/download_zen_bg.png") no-repeat; 
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 305px;
+}
+#download_zen{
+    padding-top:60px;
+}
+#download_zen_pro{
+    text-align: right;
+    margin-right:100px;
+    width:45%;
+    float: left;
+}
+#download_zen_trader{
+    width:30%;
+    float: left;
+    text-align: left;
+}
+#download_zen .button_1{
+    display:block;
+    font-family: 'NordikkaW00Bold';
+    background: url("img/button_bg.png") no-repeat;
+    background-position: center center;
+    line-height: 47px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color:#ffffff;
+    text-align: center;
+    margin-left: 30%;
+   
+}  
+#download_zen_pro .button_1{
+    margin-left: 60%;
+    margin-top:1%;
+}
+.button_2{
+    margin-top:3%;
+}
+/* contact start*/
+.contact_bg{
+    width:100%;
+    height: 400px;
+    background: #f5f5f5;
+    text-align: center;
+}
+#contact h2{
+    color: #3e596d;
+    font-size: 24px; 
+    text-transform: uppercase;
+    padding-top: 88px;
+    padding-bottom: 20px;
+}
+#contact input[type="text"],input[type="email"],select{
+    font-family: 'Calibri-Bold';
+    color: #454545;
+    width:342px;
+    height: 52px;
+    line-height: 50px;
+    font-size: 18px;
+    padding-left: 19px;
+    border:none;
+    border:2px solid #d8d8d8;
+    outline: none;
+    border-radius: 10px;
+    margin:6.5px;
+}
+#contact select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(img/down_arrow.png) 96%/5% no-repeat #ffffff;
+    width:367px;
+}
+#contact a{
+    display:inline-block;
+    background: #173144;
+    font-family: 'ZonaPro-Bold';
+    width:240px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+/* contact Style End*/
+
+/* services start*/
+.services_bg{
+    background: url("img/footer_bg.png") no-repeat; 
+    background-size: contain;
+    background-position: center center;
+    overflow: hidden;
+    
+}
+#services ul {
+    width:100%;
+    display:flex;
+}
+#services ul li {
+    margin-right: 5%;
+}
+
+#services ul li:last-child{
+    margin-right:0;
+}
+#services ul li h3{
+    font-size: 16px;
+    color: #173144;
+    text-transform: uppercase;
+    padding-top:67px;
+    padding-bottom: 17px;
+    border-bottom:1px solid #E1E2E2;
+}
+
+#services ul li ul{
+    display: block;
+    padding-top:24px;
+    padding-bottom:50px;
+}
+#services ul li ul li a{
+    color:#666666;
+    font-size:16px;
+    font-weight: 500;
+}
+/*services end*/
+
+/*footer start*/
+.footer_bg{
+    background: #ffffff;
+    height: 40px;
+}
+#footer p{
+    font-family: 'Calibri-Bold';
+    font-size: 14px;
+    color:#838383;
+    text-transform: uppercase;
+    float: left;
+    padding:10px;
+    padding-left: 40px;
+}
+#footer ul{
+    float: right;
+    display: flex;
+    padding-right: 40px;
+}
+   #footer ul li{
+    padding:10px 5px;
+}
+/*footer end*/
+
+.active{
+    background: #173144;
+  
+}
+.cfds_bg {
+    background: url("img/cfds_bg.jpg") no-repeat;
+    background-size:100% 100%;
+    background-position: center center;
+    overflow: hidden;
+    text-align: center;
+    height: 500px;
+}
+.aboutus_bg {
+    background: url("img/header-aboutus.jpeg") no-repeat;
+    background-size:100% 500px;
+    background-position: center center;
+    overflow: hidden;
+    text-align: center;
+}
+.contact-bg {
+    background: url(img/contact-bg.jpeg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: hidden;
+    text-align: center;
+    height: 500px;
+}
+.tradingplatforms_bg {
+    background: url("img/tradingplatforms.jpeg") no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

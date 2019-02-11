@@ -1,0 +1,152 @@
+
+/* Header Style Start*/
+
+#header #header_bottom_menu ul {
+    display:flex;
+    width: 100%;
+    padding-bottom: 50px;
+}
+/* Header Style End*/
+
+/*cfds-menu start*/
+.cfds-menu_bg{
+    background: #fafafa;
+    height: 70px;  
+}
+
+#cfds-menu ul{
+    width:80%;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+}
+#cfds-menu ul li{
+    float: left;
+    padding:29px 25px;
+
+}
+#cfds-menu ul li a{
+    font-family: 'AvenirNextLTPro-Bold';
+    color: #A7A7A7;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#cfds-menu ul li:first-child a{
+    text-transform: none;
+}
+/*cfds-menu End*/
+
+/* cfds  start*/
+#cfds{
+    height: 400px;;
+    padding-bottom: 80px;
+}
+#cfds #cfds-image{
+    width:28%;
+    float: left;
+    padding-top: 80px;
+    margin-right: 6%;
+}
+#cfds #cfds_content{
+    width:66%; 
+    float: left;
+
+}
+#cfds #cfds_content h2{
+    font-family: AvenirNextLTPro-Bold, AdobeInvisFont, Tahoma;
+    color: #3e596d;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding:86px 0 56px ;
+    
+}
+#cfds #cfds_content p{
+    font-family:AdobeInvisFont,Tahoma,MyriadPro-Regular;
+    color: #484848;
+    font-size: 19px;
+    letter-spacing: -.5px;
+    
+}
+ /*cfds  End*/ 
+
+/* advantages  start*/
+#advantages h2{
+    color: #3e596d;
+    font-size: 19px;
+    margin:20px 0;
+    text-align: center;
+}
+#advantages .features{
+    width:550px;
+    height: 155px;
+    float: left;
+}
+
+#advantages .feature-3{
+    margin-right: 50px;
+    height: 205px;
+    border-bottom:1px solid #E7E7E7;
+}
+#advantages .feature_container_5{
+    height: 205px;
+    border-bottom:1px solid #E7E7E7;
+    margin-left: 50px;
+}
+
+#advantages .feature_container_1{
+    width:598px;
+    height: 155px; 
+    margin-top: 50px;
+    border-right:1px solid #E7E7E7
+ }
+#advantages .feature7{
+    margin-right: 50px;
+    height: 205px;
+    margin-top: -50px;
+}
+#advantages .feature8{
+    margin-left: 50px;
+    height: 205px;
+}
+
+#advantages .feature_container_4{
+    margin-top: -155px;
+ }
+
+ #advantages .feature_container_6{
+    margin-top:100px !important;
+}
+#advantages .advantages_same_img{
+    width:16%;
+    float: left;
+}
+#advantages .features_content{
+    width:80%;
+    float: left;
+
+}
+
+#advantages .features h3{
+    font-family: 'Calibri-Bold';
+    text-transform: uppercase;
+    font-size: 19px;
+    color: #333333;   
+}
+#advantages .features p{
+    font-family: 'MYRIADPROREGULAR';
+    font-size: 18px;
+    color: #5d5d5d;
+
+}
+/*advantages End*/
+
+.active{
+    background: #173144;
+}
+.active2{
+    background: #173144;
+}
+.active3 {
+    color:#3e596d !important;
+}

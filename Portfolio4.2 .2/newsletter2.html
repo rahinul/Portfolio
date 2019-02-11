@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>NewsLetter Template</title>
+    <link href="font/font.css" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: #3c0bff;
+        }
+        
+        .full-container {
+            width: 100%;
+        }
+        
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 0 1600px #021358;
+        }
+        
+        #header #header-top {
+            display: block;
+            overflow: hidden;
+        }
+        
+        #header #header-top #header-logo {
+            margin: 20px 50px;
+            float: left;
+        }
+        
+        #header #header-top #header-logo img {
+            width: 200px;
+            height: auto;
+        }
+        
+        #header #header-top #main-menu {
+            float: right;
+            margin: 10px 30px;
+        }
+        
+        #header #header-top #main-menu ul {
+            display: flex;
+        }
+        
+        #header #header-top #main-menu ul li {
+            list-style: none;
+            padding: 20px 15px;
+        }
+        
+        #header #header-top #main-menu ul li:hover {
+            background: #5a07f560;
+        }
+        
+        #header #header-top #main-menu ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            text-shadow: 1px 1px 1px #2f5d66;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Lato-Thin";
+        }
+        
+        #select {
+            margin-top: 180px;
+            width: 780px;
+            height: 790px;
+            border: 10px dotted #040730;
+            border-radius: 50%;
+            margin: 0 auto;
+            text-align: center;
+            background: linear-gradient(to right, #3407E4, #501199);
+        }
+        
+        #header h2 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: normal;
+            padding-top: 120px;
+            margin-bottom: 20px;
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            color: #ffffff;
+        }
+        
+        #header h4 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: normal;
+            color: #fff;
+            margin-bottom: 70px;
+            font-family: "Lato-Thin";
+            font-weight: bold;
+        }
+        
+        #header .h_buttom {
+            padding: 10px 25px;
+            color: #0e0d0d;
+            background: linear-gradient(to left, #4022CB, #862DF8);
+            border-radius: 35px;
+            text-decoration: none;
+            margin-right: 40px;
+            color: #ffffff;
+            font-family: "Lato-Thin";
+            font-weight: 500;
+            box-shadow: 0 0 150px #180472;
+        }
+        
+        #offer-section {
+            margin-top: -400px;
+            text-align: center;
+            height: 250px;
+            display: block;
+            overflow: hidden;
+            border-top: 1px dotted #040730;
+            background: linear-gradient(to right, #3407E4, #501199);
+        }
+        
+        #offer-section h2 {
+            text-align: center;
+            font-family: "Lato-Thin";
+            font-weight: bolder;
+            font-size: 35px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        
+        #offer-section h3 {
+            text-align: center;
+            font-family: "Lato-Thin";
+            font-weight: bolder;
+            font-size: 25px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        
+        #offer-section p {
+            text-align: center;
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        
+        #offer-section #button {
+            padding: 10px 25px;
+            background: linear-gradient(to left, #4022CB, #862DF8);
+            border-radius: 35px;
+            text-decoration: none;
+            margin-right: 40px;
+            color: #ffffff;
+            font-family: "Lato-Thin";
+            font-weight: 500;
+            box-shadow: 0 0 150px #180472;
+        }
+        
+        #offer-section a {
+            padding: 10px 25px;
+            background: linear-gradient(to left, #4022CB, #862DF8);
+            border-radius: 35px;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: "Lato-Thin";
+            font-weight: 500;
+            box-shadow: 0 0 150px #180472;
+        }
+        
+        #offer-section a:hover {
+            background: linear-gradient(to right, #4022CB, #862DF8);
+            box-shadow: 0 0 2px #4022CB;
+        }
+        
+        #offer-bottom-section {
+            background: linear-gradient(to right, #4022CB, #862DF8);
+            text-align: center;
+            height: 300px;
+            display: block;
+            overflow: hidden;
+        }
+        
+        #offer-bottom-section .same {
+            float: left;
+            width: 376px;
+            margin: 10px;
+            height: 276px;
+            border: 2px solid #ffffffd5;
+            border-radius: 5px;
+        }
+        
+        #offer-bottom-section .same h3 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: normal;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-family: "Armata-Regular";
+            font-weight: bolder;
+        }
+        
+        #offer-bottom-section .same ul li {
+            list-style: none;
+            padding: 10px 0;
+        }
+        
+        #offer-bottom-section .same ul li a {
+            background: url(img/right-arrow.png) no-repeat;
+            background-position: center left;
+            display: inline-block;
+            padding-left: 25px;
+        }
+        
+        #offer-bottom-section .same ul li a {
+            text-decoration: none;
+            color: #fdfdfd;
+            font-size: 18px;
+            display: inline-block;
+            font-family: "Lato-Thin";
+        }
+        
+        #offer-bottom-section .same #learn-more {
+            padding: 10px 100px;
+            background: linear-gradient(to left, #4022CB, #862DF8);
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            color: #ffffff;
+            font-family: "Lato-Thin";
+            font-weight: 500;
+            box-shadow: 0 0 150px #180472;
+        }
+        
+        #offer-bottom-section .same #learn-more:hover {
+            background: linear-gradient(to right, #4022CB, #862DF8);
+        }
+        
+        .section-content-bg {
+            height: 500px;
+        }
+        
+        #section-content #section-top-content {
+            height: 250px;
+            background: linear-gradient(to right, #3407E4, #501199);
+            text-align: center;
+        }
+        
+        #section-content #section-top-content h2 {
+            font-family: "Armata-Regular";
+            font-size: 37px;
+            font-weight: normal;
+            padding-top: 50px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        
+        #section-content #section-top-content p {
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        
+        #section-content #section-top-content a {
+            padding: 8px 12px;
+            color: #0e0d0d;
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            background: #08ddcb;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        #section-content .same-content {
+            width: 266px;
+            height: 250px;
+            float: left;
+            text-align: center;
+            background: #07123ff3;
+        }
+        
+        #section-content .section-bottom-left-content {
+            background: #087596d5;
+            width: 267px;
+        }
+        
+        #section-content .section-bottom-right-content {
+            background: #016961;
+            width: 267px;
+        }
+        
+        #section-content .same-content img {
+            padding-top: 40px;
+        }
+        
+        #section-content .same-content h3 {
+            font-family: "Armata-Regular";
+            font-size: 30px;
+            font-weight: normal;
+            margin-top: 40px;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        
+        #section-content .same-content p {
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            font-size: 15px;
+            color: #26ffbe;
+            margin-bottom: 30px;
+        }
+        
+        #article-content {
+            height: 750px;
+            background: linear-gradient(to right, #3407E4, #501199);
+            display: block;
+            clear: both;
+        }
+        
+        #article-content #article-top-content {
+            height: 200px;
+            text-align: center;
+            display: block;
+        }
+        
+        #article-content #article-top-content h3 {
+            font-family: "Armata-Regular";
+            font-size: 30px;
+            font-weight: normal;
+            padding-top: 40px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        
+        #article-content #article-top-content p {
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        
+        #article-content #article-top-content a {
+            padding: 8px 12px;
+            color: #000000;
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            background: #dae6da;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        #article-content #article-bottom-content .same-article {
+            width: 370px;
+            height: 480PX;
+            margin: 15px;
+            float: left;
+            text-align: center;
+            background: linear-gradient(to right, #3407E4, #501199);
+            box-shadow: 0 0 1200px #010f49;
+        }
+        
+        #article-content .same-article img {
+            width: 370px;
+            height: 200px;
+        }
+        
+        #article-content #article-bottom-content h3 {
+            font-family: "Armata-Regular";
+            font-size: 30px;
+            font-weight: normal;
+            padding-top: 30px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        #article-content #article-bottom-content p {
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            font-size: 15px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        
+        #article-content #article-bottom-content a {
+            padding: 10px 25px;
+            background: linear-gradient(to left, #4022CB, #862DF8);
+            border-radius: 35px;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: "Lato-Thin";
+            font-weight: 500;
+            box-shadow: 0 0 150px #180472;
+        }
+        
+        #footer {
+            display: block;
+            overflow: hidden;
+        }
+        
+        #footer .footer-top {
+            background: linear-gradient(to right, #3407E4, #501199);
+            height: 300px;
+            border-bottom: 3px solid #010222;
+        }
+        
+        #footer .footer-top .footer-same {
+            float: left;
+            width: 250px;
+            margin-right: 25px;
+        }
+        
+        #footer .footer-top .footer-same h2 {
+            text-align: center;
+            font-family: "Armata-Regular";
+            font-size: 24px;
+            font-weight: normal;
+            padding: 20px 0px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #3407E4;
+            color: #ffffff;
+        }
+        
+        #footer .footer-top .footer-top-left p {
+            padding: 10px 20px;
+            color: #fff;
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        #footer .footer-top .footer-top-left img {
+            padding-right: 15px;
+        }
+        
+        #footer .footer-top .footer-top-middle li {
+            list-style: none;
+            padding: 5px 0;
+        }
+        
+        #footer .footer-top .footer-top-middle li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            font-size: 14px;
+            font-weight: normal;
+            background: url(img/right-arrow.png) no-repeat;
+            background-position: center left;
+            display: inline-block;
+            padding-left: 25px;
+        }
+        
+        #footer .footer-top .footer-top-right {
+            margin-right: 0;
+        }
+        
+        #footer .footer-top .footer-top-right ul {
+            display: flex;
+        }
+        
+        #footer .footer-top .footer-top-right ul li {
+            list-style: none;
+            padding: 10px;
+        }
+        
+        #footer .footer-middle {
+            text-align: center;
+            background: linear-gradient(to right, #3407E4, #501199);
+            box-shadow: 0 0 200px #01104d;
+            background-size: 800px 300px;
+            height: 300px;
+        }
+        
+        #footer .footer-middle h3 {
+            font-family: "Armata-Regular";
+            text-align: center;
+            font-size: 30px;
+            font-weight: normal;
+            padding-top: 60px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        #footer .footer-middle p {
+            text-align: center;
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        
+        #footer .footer-middle input[type=text] {
+            padding: 10px;
+            width: 40%;
+            font-size: 18px;
+            color: #fff;
+            background: #9bf30dee;
+            border: none;
+            outline: none;
+        }
+        
+        #footer .footer-middle input[type=submit] {
+            padding: 10px;
+            width: 15%;
+            font-size: 18px;
+            background: #f8ce13;
+            color: #010808;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #footer .footer-middle button:hover {
+            outline: none;
+        }
+        
+        #footer .footer-bottom {
+            text-align: center;
+            height: 80px;
+            background: #3407E4;
+            border-top: 3px solid #010222;
+        }
+        
+        #footer .footer-bottom p {
+            font-family: "Lato-Thin";
+            font-weight: bold;
+            font-size: 15px;
+            color: #ffffff60;
+            padding: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="full-container">
+        <div class="container header_bg2">
+            <header id="header">
+                <div id="header-top">
+                    <div id="header-logo"><img alt="Header-Logo" src="img/header-logo.svg"></div>
+                    <div id="main-menu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Apps</a>
+                            </li>
+                            <li>
+                                <a href="#">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="select">
+                    <h2>2018 Modern & Clean<br> Newsletter for Your Agency</h2>
+                    <h4>Build Your Business with Us</h4><a class="h_buttom" href="#">Start a Project</a> <a class="h_buttom" href="#">Read More....</a>
+                </div>
+            </header>
+        </div>
+    </div>
+    <!--
+    <div class="full-container">
+        <div class="container">
+          <section>
+                <img src="section.jpg" alt="section">
+            </section>
+        </div>
+    </div>
+-->
+    <div class="full-container offer-section-bg">
+        <div class="container">
+            <div id="offer-section">
+                <h2>New Year Offer</h2>
+                <h3>Start your web Agency for just $21</h3>
+                <p>Lorem incidunt magni labore fa aperiam quas repudiandae minus vitae nihil</p><a href="#" id="button">Start a Project</a> <a href="#">Read More....</a>
+            </div>
+        </div>
+    </div>
+    <div class="full-container offer-bottom-section-bg">
+        <div class="container">
+            <div id="offer-bottom-section">
+                <div class="offer-bottom-left same">
+                    <h3>We offer modern and clean newsletter design</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Responsive Design</a>
+                        </li>
+                        <li>
+                            <a href="#">Modern and Clean</a>
+                        </li>
+                        <li>
+                            <a href="#">Help File Included</a>
+                        </li>
+                    </ul><a href="#" id="learn-more">Learn More....</a>
+                </div>
+                <div class="offer-bottom-right same">
+                    <h3>We offer modern and clean newsletter design</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Responsive Design</a>
+                        </li>
+                        <li>
+                            <a href="#">Modern and Clean</a>
+                        </li>
+                        <li>
+                            <a href="#">Help File Included</a>
+                        </li>
+                    </ul><a href="#" id="learn-more">Learn More....</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-container section-content-bg">
+        <div class="container">
+            <div id="section-content">
+                <div id="section-top-content">
+                    <h2>Why You Hire Me ?</h2>
+                    <p>Lorem incidunt magni labore fa aperiam quas repudiandae minus vitae nihil.</p><a class="learn" href="#">Learn More....</a>
+                </div>
+                <div id="section-bottom-content">
+                    <div class="same-content section-bottom-left-content">
+                        <img alt="idea" src="img/idea.png">
+                        <h3>Great Ideas</h3>
+                        <p>Creative Minds on Action</p>
+                    </div>
+                    <div class="same-content section-bottom-middle-content">
+                        <img alt="Advertise" src="img/Advertise.png">
+                        <h3>Advertise With Us</h3>
+                        <p>We Are Big and Loud</p>
+                    </div>
+                    <div class="same-content section-bottom-right-content">
+                        <img alt="work" src="img/work.png">
+                        <h3>Work With Us</h3>
+                        <p>Work is Our Second Name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-container article-content-bg">
+        <div class="container">
+            <div id="article-content">
+                <div id="article-top-content">
+                    <h3>Some News From Our Blog</h3>
+                    <p>Lorem incidunt magni labore fa aperiam quas repudiandae minus vitae nihil.</p><a class="" href="#">Learn More....</a>
+                </div>
+                <div id="article-bottom-content">
+                    <div class="same-article article-bottom-left-content">
+                        <img alt="idea" src="img/image1.jpg">
+                        <h3>Advertise With Us</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, odit velit. Veritatis natus quisquam rerum nesciunt dolore, odit tenetur unde illo! Voluptatem numquam commodi doloremque accusantium amet sed quaerat accusamus!
+                        </p><a href="#">Read More...</a>
+                    </div>
+                    <div class="same-article article-bottom-right-content">
+                        <img alt="work" src="img/image2.jpg">
+                        <h3>Work With Us</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis odit omnis laborum minus temporibus fugit ex doloribus veritatis consequuntur cum voluptates ab dolore culpa, cupiditate perferendis placeat nobis dolorem unde!
+                        </p><a href="#">Read More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-container footer-top-bg">
+        <div class="container">
+            <footer id="footer">
+                <div class="footer-top">
+                    <div class="footer-top-left footer-same">
+                        <h2>Contact Us</h2>
+                        <p><span><img alt="Phone"
+                 src="img/phone.png"></span>+8801-7174-36223</p>
+                        <p><span><img alt="message"
+                 src="img/message.png"></span>contact@wtg.comd</p>
+                        <p><span><img alt="location"
+                 src="img/location.png"></span>Nabinogor,Lalpur Upozilla<br> Lalpur,Natore,Bangladesh 6400.</p>
+                    </div>
+                    <div class="footer-top-middle footer-same">
+                        <h2>Our Policy & Privacy</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Lorem ipsum dolor sit amet hic eius fuga quis odit tempora similique</a>
+                            </li>
+                            <li>
+                                <a href="#">Lorem ipsum dolor sit amet hic eius fuga quis odit tempora similique</a>
+                            </li>
+                            <li>
+                                <a href="#">Lorem ipsum dolor sit amet hic eius fuga quis odit tempora similique</a>
+                            </li>
+                            <li>
+                                <a href="#">Lorem ipsum dolor sit amet hic eius fuga quis odit tempora similique</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top-right footer-same">
+                        <h2>We are Social</h2>
+                        <ul>
+                            <li>
+                                <a href="#"><img alt="facebook" src="img/facebook.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img alt="twitter" src="img/twitter.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img alt="instagram" src="img/instagram.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img alt="pint" src="img/pint.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img alt="google-plus" src="img/google_plus.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <h3>Sing Up For Newsletter</h3>
+                    <p>Contact us and let us know If you have any question<br> Don't forget to subscribe for more awsome stuff by typing mail below.</p><input placeholder="Your Email" type="text"> <input type="submit" value="Sign Up">
+                </div>
+                <div class="footer-bottom">
+                    <p>copyright &copy; 2018 Newsletter.All Right Reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--
+     <div class="full-container">
+        <div class="container">
+            
+        </div>
+    </div>
+-->
+</body>
+
+</html>
